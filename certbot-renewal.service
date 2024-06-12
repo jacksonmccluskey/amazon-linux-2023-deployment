@@ -10,3 +10,8 @@ ExecStart=/usr/bin/certbot renew
 
 [Install]
 WantedBy=multi-user.target
+
+# $ systemctl enable certbot-renewal.service
+# $ systemctl start certbot-renewal.service
+# $ systemctl daemon-reload
+# $ systemctl status certbot-renewal.service
