@@ -1,0 +1,12 @@
+[Unit]
+Description=Certbot SSL/TLS Certificate Renewal
+After=network.target
+
+[Service]
+Type=simple
+User=USER
+
+ExecStart=/usr/bin/certbot renew
+
+[Install]
+WantedBy=multi-user.target
