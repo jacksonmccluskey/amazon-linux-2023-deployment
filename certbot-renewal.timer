@@ -1,0 +1,15 @@
+[Unit]
+Description=Certbot Renewal Service Timer = Every Day
+Documentation=man:certbot(1)
+
+[Timer]
+# Run Every Day At Some Time Between 2:00 PM and 5:00 PM
+OnCalendar=*-*-* 14:00/17:00
+
+[Install]
+WantedBy=multi-user.target
+
+# $ systemctl enable certbot-renewal.timer
+# $ systemctl start certbot-renewal.timer
+# $ systemctl daemon-reload
+# $ systemctl status certbot-renewal.timer
