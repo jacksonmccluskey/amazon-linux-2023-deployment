@@ -1,0 +1,13 @@
+[Unit]
+Description=<application-description>
+Documentation=https://github.com/jacksonmccluskey
+After=network.target
+
+[Service]
+Type=simple
+User=<linux-user>
+ExecStart=/path/to/my/script.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
