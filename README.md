@@ -11,3 +11,7 @@ $ nvm install 20
 $ dnf install git -y
 $ mkdir /var/www
 ```
+
+### Official Resources
+
+- [Creating Users](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/managing-users.html)
