@@ -1,3 +1,5 @@
+#!/bin/bash
+
 [Unit]
 Description=<application-description>
 Documentation=https://github.com/jacksonmccluskey
@@ -5,8 +7,9 @@ After=network.target
 
 [Service]
 Type=simple
-User=<linux-user>
-ExecStart=/path/to/my/script.sh
+User=<user>
+WorkingDirectory=<project-directory>
+ExecStart=/bin/bash run.sh
 Restart=always
 
 [Install]
