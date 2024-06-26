@@ -16,6 +16,8 @@ $ cd /var/www
 $ git clone <my-project-git-url> # Don't forget the .env!
 $ tsc server.ts
 $ node server.js # For Testing
+$ dns install docker -y
+$ systemctl start docker # Run Docker Daemon
 ```
 
 ### Official Resources
