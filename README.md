@@ -23,3 +23,4 @@ $ systemctl start docker # Run Docker Daemon
 ### Official Resources
 
 - [Creating Users](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/managing-users.html)
+- [Initialize Docker](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-docker.html)
