@@ -1,0 +1,21 @@
+#!/bin/bash
+
+[Unit]
+Description=Remove all unused containers, networks, images (both dangling and unused), and optionally, volumes.
+Documentation=https://docs.docker.com/reference/cli/docker/system/prune/
+After=network.target
+
+[Service]
+Type=simple
+User=<user>
+WorkingDirectory=<project-directory>
+ExecStart=/bin/bash docker-prune.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
+# $ systemctl enable docker-prune.service
+# $ systemctl start docker-prune.service
+# $ systemctl daemon-reload
+# $ systemctl status docker-prune.service
