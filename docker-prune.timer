@@ -1,0 +1,15 @@
+[Unit]
+Description=Docker Prune Service Timer = Every Day
+Documentation=https://docs.docker.com/reference/cli/docker/system/prune/
+
+[Timer]
+# Run Every Day At 2:00 PM
+OnCalendar=*-*-* 14:00
+
+[Install]
+WantedBy=multi-user.target
+
+# $ systemctl enable docker-prune.timer
+# $ systemctl start docker-prune.timer
+# $ systemctl daemon-reload
+# $ systemctl status docker-prune.timer
