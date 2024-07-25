@@ -14,3 +14,8 @@ Restart=always
 
 [Install]
 WantedBy=multi-user.target
+
+# $ systemctl enable api.service
+# $ systemctl start api.service
+# $ systemctl daemon-reload
+# $ systemctl status api.service
